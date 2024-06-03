@@ -1,0 +1,55 @@
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.payment-form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 10px 40px 10px 35px; /* Left padding accounts for icon */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .payment-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
